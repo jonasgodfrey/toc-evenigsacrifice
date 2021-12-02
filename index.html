@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evening Sacrifice | The Oasis Church</title>
+
+  <meta name="application-name" content="&nbsp;"/>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="styles.js" type="text/javascript"></script>
+  <style>
+    h1{color: black;}
+    a{color: #ffFFFF;}
+    p{color: #fff;
+      text-align: center;
+      }
+  </style>
+</head>
+<!--<body onload="load()">-->
+<body style="background-image: url('bg.jpg');">
+ <div class="spinner"></div>
+ <div class="container">
+    <div class="left">
+      <h1 style="font-family: Montserrat; color: #ffffff"> Get Your   
+        <span style="color: #FF0000">EVENING SACRIFICE </span> BADGE</h1>
+      <p>Simply add your  picture to the frame. Screengrab or download through the preview button</p>
+      <img src="yellow.png" alt="" id="arrow">
+    </div>
+
+
+    <div class="right">
+     <div id="badge">
+       <input id="attendee-name"  placeholder="" style="color: rgb(248, 252, 251)">
+       <img src="g6.jpg" id="voltage-badge" alt="Personalized IV" width="520" height="480"><Br>
+       <label for="user_profile" id="imgSelector">
+         <div id="placeholder">          
+           <h2 id="placeholder-text">Add ur Picture</h2>
+           <input type="file" id="user_profile" name="profile" accept=".jpg, .jpeg, .png" hidden>
+         </div>
+       </label>
+        <div id="control">
+           <p id="tooltip">*Use the slider to rotate the image on the frame</p>
+       </div>
+      </div>
+      <button class="btn" id="preview-btn" onclick="createBadge()">Preview & download</button>
+    </div>
+  
+
+  <!-- Download Section -->
+  <div class="modal">
+    <button class="modal-btn" onclick="closeModal()">&times;</button>
+
+    <div id="my-badge">
+      <button class="btn" id="download-btn" onclick="downloadBadge()">Download</button>
+      <p style="color: purple">Designed by<a href="https://houseofamaya.com.ng" target="_blank"style="color: red;text-decoration: none;"> Amaya Tech</a></p>
+    </div>
+
+  </div>
+</div>
+  <script src="html2canvas.min.js" type="text/javascript"></script>
+  <script src="FileSaver.js" type="text/javascript"></script>
+  <script src="function.js" type="text/javascript"></script>
+
+</body>
+</html>
